@@ -1,2 +1,12 @@
-- name: Electron Builder Action
-  uses: samuelmeuli/action-electron-builder@v1.6.0
+name: manual workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job1:
+    name: build
+    runs-on: windows-latest
+
+    steps:
+      - uses: samuelmeuli/action-electron-builder@v1.6.0
